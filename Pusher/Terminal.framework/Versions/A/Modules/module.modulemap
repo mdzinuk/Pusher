@@ -1,0 +1,11 @@
+framework module Terminal {
+  umbrella header "Terminal.h"
+
+  export *
+  module * { export * }
+}
+
+module Terminal.Swift {
+  header "Terminal-Swift.h"
+  requires objc
+}

@@ -1,0 +1,121 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target x86_64-apple-macos12.2 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Terminal
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Cocoa
+import Combine
+import Foundation
+import Swift
+@_exported import Terminal
+import _Concurrency
+public struct Application : Swift.Decodable, Swift.Equatable {
+  public let bundleIdentifier: Swift.String
+  public let displayName: Swift.String
+  public static func == (a: Terminal.Application, b: Terminal.Application) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class TerminalManager {
+  public static func fetchingDeviceList() -> Combine.AnyPublisher<[Terminal.DeviceFamily : [Terminal.DeviceContext]], Terminal.Terminal.Error>
+  public static func isDeveloperToolSupportPush() -> Combine.AnyPublisher<Swift.Bool, Terminal.Terminal.Error>
+  public static func fetchingApplicationsFor(udid: Swift.String) -> Combine.AnyPublisher<[Terminal.ApplicationContext], Swift.Never>
+  public static func deviceOperation(_ simulator: Swift.String, _ isShutdown: Swift.Bool) -> Combine.AnyPublisher<Swift.Bool, Swift.Never>
+  public static func sendPush(for udid: Swift.String, app id: Swift.String, payload: Swift.String) -> Combine.AnyPublisher<Swift.Bool, Swift.Never>
+  @objc deinit
+}
+public struct ApplicationContext : Swift.Hashable {
+  public let displayName: Swift.String
+  public let bundleIdentifier: Swift.String
+  public static let `default`: Terminal.ApplicationContext
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: Terminal.ApplicationContext, b: Terminal.ApplicationContext) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct DeviceContext : Swift.Comparable, Swift.Hashable {
+  public var id: Swift.String {
+    get
+  }
+  public let name: Swift.String
+  public let udid: Swift.String
+  public let image: AppKit.NSImage
+  public let family: Terminal.DeviceFamily
+  public let state: Terminal.Device.State
+  public static func < (lhs: Terminal.DeviceContext, rhs: Terminal.DeviceContext) -> Swift.Bool
+  public static func == (lhs: Terminal.DeviceContext, rhs: Terminal.DeviceContext) -> Swift.Bool
+  public static let `default`: Terminal.DeviceContext
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Device : Swift.Decodable, Swift.Equatable {
+  public let state: Terminal.Device.State?
+  public let name: Swift.String
+  public let udid: Swift.String
+  public let deviceTypeIdentifier: Swift.String?
+  public enum State : Swift.String, Swift.Decodable {
+    case booted
+    case shutdown
+    case other
+    public init(from decoder: Swift.Decoder) throws
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public static func == (a: Terminal.Device, b: Terminal.Device) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum CommandLineError : Swift.Error {
+  case missingCommand
+  case missingOutput
+  case unknown(Swift.Error)
+}
+public struct Terminal {
+  public typealias Error = Terminal.CommandLineError
+}
+public struct DeviceType : Swift.Decodable, Swift.Hashable, Swift.Identifiable {
+  public let name: Swift.String
+  public let identifier: Swift.String
+  public var id: Swift.String {
+    get
+  }
+  public var image: AppKit.NSImage? {
+    get
+  }
+  public var family: Terminal.DeviceFamily {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: Terminal.DeviceType, b: Terminal.DeviceType) -> Swift.Bool
+  public typealias ID = Swift.String
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum DeviceFamily : Swift.CaseIterable, Swift.Comparable {
+  case iPhone
+  case iPad
+  case tv
+  case watch
+  public var displayName: Swift.String {
+    get
+  }
+  public static func < (lhs: Terminal.DeviceFamily, rhs: Terminal.DeviceFamily) -> Swift.Bool
+  public static func == (a: Terminal.DeviceFamily, b: Terminal.DeviceFamily) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [Terminal.DeviceFamily]
+  public static var allCases: [Terminal.DeviceFamily] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Terminal.Device.State : Swift.Equatable {}
+extension Terminal.Device.State : Swift.Hashable {}
+extension Terminal.Device.State : Swift.RawRepresentable {}
+extension Terminal.DeviceFamily : Swift.Hashable {}
