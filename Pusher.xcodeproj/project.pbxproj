@@ -57,7 +57,7 @@
 		86559E6D28E5A53D00691763 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		86559E7028E5AA3C00691763 /* PusherRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PusherRelease.entitlements; sourceTree = "<group>"; };
 		865F120E28EF726600D1BFAF /* Terminal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Terminal.framework; path = Pusher/Terminal.framework; sourceTree = "<group>"; };
-		86D9298528E55E0D0058448E /* Pusher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pusher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86D9298528E55E0D0058448E /* Ⓟusher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ⓟusher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D9298828E55E0D0058448E /* PusherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherApp.swift; sourceTree = "<group>"; };
 		86D9298C28E55E0F0058448E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86D9298F28E55E0F0058448E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		86D9298628E55E0D0058448E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				86D9298528E55E0D0058448E /* Pusher.app */,
+				86D9298528E55E0D0058448E /* Ⓟusher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,9 +177,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		86D9298428E55E0D0058448E /* Pusher */ = {
+		86D9298428E55E0D0058448E /* Ⓟusher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86D9299428E55E0F0058448E /* Build configuration list for PBXNativeTarget "Pusher" */;
+			buildConfigurationList = 86D9299428E55E0F0058448E /* Build configuration list for PBXNativeTarget "Ⓟusher" */;
 			buildPhases = (
 				86D9298128E55E0D0058448E /* Sources */,
 				86D9298228E55E0D0058448E /* Frameworks */,
@@ -190,9 +190,9 @@
 			);
 			dependencies = (
 			);
-			name = Pusher;
+			name = "Ⓟusher";
 			productName = Pusher;
-			productReference = 86D9298528E55E0D0058448E /* Pusher.app */;
+			productReference = 86D9298528E55E0D0058448E /* Ⓟusher.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -223,7 +223,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				86D9298428E55E0D0058448E /* Pusher */,
+				86D9298428E55E0D0058448E /* Ⓟusher */,
 			);
 		};
 /* End PBXProject section */
@@ -454,7 +454,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		86D9299428E55E0F0058448E /* Build configuration list for PBXNativeTarget "Pusher" */ = {
+		86D9299428E55E0F0058448E /* Build configuration list for PBXNativeTarget "Ⓟusher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86D9299528E55E0F0058448E /* Debug */,
