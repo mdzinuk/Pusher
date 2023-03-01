@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		BnSXG74TSPZydzPDkjNENUGK0vM=
+		fMkqIw2gOQ9e11W0jguxo759quI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -15,7 +15,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QBOtAwq40zF/yxR5jzh5kcrxqsFhG1aXJQGQHVad8T0=
+			QQ7v/VVlPcJI7BRrtChLKxjIBBlWz03AJDa7IO72lAQ=
 			</data>
 		</dict>
 		<key>Headers/Terminal.h</key>
@@ -25,39 +25,11 @@
 			7vxdfSnniXexIrvkSCdqKOXp8JP92YyqoeokeSG58nA=
 			</data>
 		</dict>
-		<key>Modules/Terminal.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OS13Jm134sXQOJfqBBiihDT1c1Ap2TETzfA66ebKYbU=
-			</data>
-		</dict>
 		<key>Modules/Terminal.swiftmodule/Project/x86_64-apple-macos.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3GlcJN8ALnVwajyj6H9t7jRKXCuxPRoClW16HXLq6zs=
-			</data>
-		</dict>
-		<key>Modules/Terminal.swiftmodule/arm64-apple-macos.abi.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
-			</data>
-		</dict>
-		<key>Modules/Terminal.swiftmodule/arm64-apple-macos.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			I1Rgk+5DhbAJTU6tQph1Vv7e81ZJgQL1Wu0MzdiiktA=
-			</data>
-		</dict>
-		<key>Modules/Terminal.swiftmodule/arm64-apple-macos.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+kDjVyvtUPaCDgFnpZc1NaYVytiULoXIsRlsSfWVJS8=
+			j1UXF5VhpVgEIqfOF/79RSFMrlCvsmF8KZyATw4awKs=
 			</data>
 		</dict>
 		<key>Modules/Terminal.swiftmodule/x86_64-apple-macos.abi.json</key>
@@ -71,14 +43,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Of4fQCyZcdK+I7rR8E6H8RK83aUO3RO4CZWz7v5cUjs=
+			cOgIa3eW+8g6pXGeFyGdyyuOvWdJEnMKBBspJHKyoFM=
 			</data>
 		</dict>
 		<key>Modules/Terminal.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bC5UFgTAAD3tmDzy/DBoQCj0mrKWFOLE4Sm9odqWMLI=
+			f7WPQoEpiB/l8H8d4KX9WGit9I4n4srN8sS7SmgWE0k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -92,7 +64,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R56d7yVwUQzwWjrR8QM5+P5/nUvpAvRhsY4L8YurQaU=
+			XM/C6cQkPv8tzTMbiPrcHjKT+Qy0w3E6QzqZGw2X7Zs=
 			</data>
 		</dict>
 	</dict>

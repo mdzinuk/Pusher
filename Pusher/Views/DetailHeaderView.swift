@@ -28,11 +28,11 @@ struct DetailHeaderView: View {
                 Image(nsImage: device.image)
                     .resizable()
                     .frame(width: 64.0, height: 64)
-                    .shadow(color: .black, radius: 10, x: 2, y: -1)
+                    .shadow(color: .gray, radius: 2, x: 1, y: 0)
                     .blendMode(.colorBurn).scaledToFit()
                 VStack(alignment: .leading) {
                     Text(device.name)
-                        .foregroundColor(Color.black)
+                        .foregroundColor(Color.orange)
                         .frame(maxWidth: 400, minHeight: 30, alignment: .topLeading)
                         .background(Color.clear)
                         .font(.title)
@@ -44,7 +44,7 @@ struct DetailHeaderView: View {
                 Button(device.state == .booted ? Constant.close.message : Constant.activate.message, action: {
                     self.viewModel.send(event: ViewModel.Event.onDeviceOperation(device))
                 }).buttonStyle(BorderedButtonStyle())
-                    .shadow(color: .black, radius: 10, x: 5, y: 0)
+                    .shadow(color: .gray, radius: 2, x: 1, y: 0)
                     .blendMode(.normal)
             }
         }.padding(16)
